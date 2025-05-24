@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #333333;
+    --text-dark: #ffffff;
+    --border-color: #dee2e6;
+    --hover-color: #0056b3;
+    --font-family: 'Arial', sans-serif;
+    /* Extension card background colors */
+    --devlens-bg: #2d3a4e;
+    --stylespy-bg: #3a4e4e;
+    --speedboost-bg: #4e2d2d;
+    --jsonwizard-bg: #4e3a4e;
+    --tabmasterpro-bg: #2d4e3a;
+    --viewportbuddy-bg: #4e4e2d;
+    --markupnotes-bg: #2d4e4e;
+    --gridguides-bg: #3a2d4e;
+    --palettepicker-bg: #4e4e3a;
+    --linkchecker-bg: #2d3a4e;
+    --domsnapshot-bg: #4e2d4e;
+    --consoleplus-bg: #2d4e3a;
+} 
