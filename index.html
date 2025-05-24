@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Browser Extension Manager</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-left">
+      <img src="./assets/images/logo.svg" alt="Extensions Logo" class="header-logo">
+      <span class="header-title">Extensions</span>
+    </div>
+    <div class="header-right">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <button id="theme-toggle" class="theme-toggle-btn">
+        <img src="./assets/images/icon-moon.svg" alt="Toggle Theme">
+      </button>
+    </div>
+  </header>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="active">Active</button>
+    <button class="filter-btn" data-filter="inactive">Inactive</button>
+  </div>
+  <h2 class="section-title">Extensions List</h2>
+  <div id="extensions-container" class="extensions-grid">
+    <!-- Extensions will be loaded here dynamically -->
+  </div>
+  <script src="scripts/main.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">antony gichuki</a>.
+  </div>
+
+  <div id="remove-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <p>Are you sure you want to remove this extension?</p>
+      <div class="modal-actions">
+        <button id="modal-cancel" class="modal-btn cancel">Cancel</button>
+        <button id="modal-confirm" class="modal-btn confirm">Remove</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
